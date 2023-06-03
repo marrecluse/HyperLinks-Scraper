@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scraping Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+</head>
+<body style="background-image: url('static/bg.jpg');background-size: cover;height: 100%;background-repeat: no-repeat;">
+
+    <div class="container mt-5">
+        <h2>Scraping Results</h2>
+        {% if links %}
+            <h3>Links:</h3>
+            <ul class="bg-dark list-group">
+                {% for link in links %}
+                    <li class="list-group-item"><a href="{{ link.url }}">{{ link.text }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No links found.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Scraping Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Scraping Results</h2>
+        {% if links %}
+            <h3>Links:</h3>
+            <ul class="list-group">
+                {% for link in links %}
+                    <li class="list-group-item"><a href="{{ link }}">{{ link }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No links found.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+ -->

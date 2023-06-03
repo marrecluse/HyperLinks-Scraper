@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Scraping Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+</head>
+<body style="background-image: url('static/bg.jpg');background-size: cover;height: 100%;background-repeat: no-repeat;">
+    <div class="container mt-5">
+        <h2>Web Scraping Project</h2>
+        <form action="/scrape" method="post">
+            <div class="mb-3">
+                <label for="url" class="form-label">Enter the URL to scrape:</label>
+                <input type="text" class="container form-control" id="url" name="url" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Scrape</button>
+        </form>
+    </div>
+</body>
+</html>
